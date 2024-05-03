@@ -7,10 +7,10 @@ const getAll = catchError(async(req, res) => {
     return res.json(results);
 });
 
-const create = catchError(async(req, res) => {
+const create = catchError(async (req, res) => {
     const result = await Products.create(req.body);
     return res.status(201).json(result);
-});
+  });
 
 const getOne = catchError(async(req, res) => {
     const { id } = req.params;
