@@ -5,7 +5,7 @@ const BASE_URL = '/api/v1/categories'
 
 let TOKEN
 let categoryId
-console.log(TOKEN)
+//console.log(TOKEN)
 //hook de inicio de sesion
 beforeAll(async () => {
   const user = {
@@ -17,7 +17,7 @@ beforeAll(async () => {
     .post('/api/v1/users/login')
     .send(user)
 
-  console.log('Login response:', res.status, res.body);
+  //console.log('Login response:', res.status, res.body);
 
   TOKEN = res.body.token;
 })
